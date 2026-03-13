@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nodeapp:
+    build: ./node-app
+    container_name: nodeapp
+    ports:
+      - "3000:3000"
+
+  phpapp:
+    build: ./php-app
+    container_name: phpapp
+    ports:
+      - "8080:80"
